@@ -134,9 +134,6 @@ def bot_move(array):
                 break
     return result    
              
-
-
-
 def play_with_friend(N, player1, player2):
     if first_move == 1:
         print(f'{player1} ходит первым, играет крестиками')
