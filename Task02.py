@@ -85,9 +85,12 @@ def calculator(data):
         check_bracket(data)
         
     return priority(data)
-    
-arithmetic_expression = input('Введите выражение для рассчета: ')
-expression_list = [el for el in arithmetic_expression]
-total = calculator(expression_list)
-total = total[0]
-print(f'Ответ = {total}')
+
+try:    
+    arithmetic_expression = input('Введите выражение для рассчета: ')
+    expression_list = [el for el in arithmetic_expression]
+    total = calculator(expression_list)
+    total = total[0]
+    print(f'Ответ = {total}')
+except:
+    print('Ошибка, введите без пробелов между символами, допустимые операции: */-+')
