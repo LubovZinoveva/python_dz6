@@ -1,8 +1,6 @@
 # Создайте программу для игры в "Крестики-нолики".
 
 from random import randint
-from re import M
-from unittest import result
 
 def move_cross(list1, row, column):
     if list1[row][column] != '':
